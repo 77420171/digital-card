@@ -1,0 +1,157 @@
+/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* 头部样式 */
+.card-header {
+    display: flex;
+    align-items: center;
+    padding: 2.5rem;
+    background: #f8f9fa;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.basic-info h1 {
+    font-size: 2rem;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+}
+
+.basic-info p {
+    font-size: 1rem;
+    color: #4a5568;
+    margin: 0.3rem 0;
+    line-height: 1.6;
+}
+
+.signature {
+    margin-top: 0.8rem;
+    font-style: italic;
+    color: #667eea;
+    font-weight: 500;
+}
+
+/* 通用区块样式 */
+section {
+    padding: 1.5rem 2.5rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+section h2 {
+    font-size: 1.3rem;
+    color: #2d3748;
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid #667eea;
+    display: inline-block;
+}
+
+/* 自我介绍 */
+.intro p {
+    line-height: 1.8;
+    color: #4a5568;
+    text-indent: 2em;
+}
+
+/* 标签样式 */
+.tags, .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.tag, .skill {
+    padding: 0.5rem 1rem;
+    background: #edf2f7;
+    border-radius: 20px;
+    color: #2d3748;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.tag:hover, .skill:hover {
+    background: #667eea;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* 链接样式 */
+.links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.2rem;
+    background: #667eea;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.link-item:hover {
+    background: #5568d3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* 页脚 */
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    color: #718096;
+    font-size: 0.9rem;
+    background: #f8f9fa;
+}
+
+/* 响应式适配 */
+@media (max-width: 600px) {
+    .card-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+    section {
+        padding: 1.2rem 1.5rem;
+    }
+}
